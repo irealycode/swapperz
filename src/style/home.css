@@ -1,0 +1,186 @@
+
+.body {
+    margin:0px;
+    padding: 0px;
+    /* background-color: rgb(138, 138, 138); */
+}
+
+.body h1 {
+    font-family: ns;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+.login {
+    color: gray;
+}
+.login:hover {
+    color:#ffae00;
+}
+
+.regs {
+    color: black;
+    background-color: #ffae00;
+}
+
+.regs:hover{
+    background-color: black;
+    color: #ffae00;
+}
+
+.account {
+    position: absolute;
+    right: 30px;
+}
+
+.account img {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+
+.account img:hover {
+    border-bottom: 2px solid #ffae00;
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+}
+
+.live-swaps {
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.live-swaps h1 {
+    font-family: ns;
+}
+/* 
+.header input {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 17px;
+    color: black;
+    padding-left: 0px;
+    padding-right: 10px;
+    width: 15%;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 0px;
+    border:0px;
+    border-bottom: 2px solid black;
+} */
+
+.trade {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    animation: move 200s ease-out forwards;
+    position: absolute;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+@keyframes move {
+    from {top:-200px; opacity: 1;}
+    to {top:10000px; opacity: 1;}
+}
+
+.trade img {
+    height: 80px;
+    width: 80px;
+    border-radius: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 4px solid #ffae00;
+}
+
+.header {
+    border-radius: 13px;
+    background-color: white;
+}
+
+
+.searchBox {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #ffae00;
+    height: 40px;
+    border-radius: 13px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 300px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: black;
+  background-image: url('../assets/search_orange.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 7px;
+  background-position-y: 7px;
+  color : #ffae00;
+}
+
+.searchBox:hover > .searchButton img {
+    /* background: black; */
+    color : #ffae00;
+  }
+
+.searchButton {
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: #ffae00;
+    background-image: url('../assets/search.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: 3px solid black;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-family:ns;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+
+.createOffer h2 {
+    font-family: ETH;
+}
